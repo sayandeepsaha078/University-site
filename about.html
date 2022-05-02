@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University website</title>
+    <link rel="stylesheet" href="first.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a  href="index.html"><img src="images/logo.png" alt="logo"></a>
+            <div class="nav-links">
+                
+                <ul id="navl" >
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    
+                    <li class="ab"><a href="first_webpage.html">HOME</a></li>
+                    <li class="ab"><a href="about.html">ABOUT</a></li>
+                    <li class="ab"><a href="course.html">COURSE</a></li>
+                    <li class="ab"><a href="blog.html">BLOG</a></li>
+                    <li class="ab"><a href="contact.html">CONTACT</a></li>
+                    
+            
+                </ul>
+                
+            </div>
+            <i id="cd" class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+        <h1>About Us</h1>
+
+    </section>
+    <!------about us content----->
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>We Are The World's Largest University</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum sunt fuga esse dolor veritatis culpa non exercitationem cumque, tempore quia, omnis assumenda sed quaerat sint alias. Eligendi dolorum sit dolorem recusandae sed libero quis unde, doloremque illum voluptas deleniti, dignissimos enim natus ab! Temporibus, similique quia eum eos expedita harum.</p>
+                <a href="" class="hero red">EXPLORE NOW</a>
+            </div>
+            <div class="about-col">
+                <img src="images/about.jpg" alt="about us">
+            </div>
+
+        </div>
+
+    </section>
+     
+       <!------Footer----->
+       <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, hic facere? Ipsa perferendis dolore cumque.<br> fugiat accusantium, dolor ad in incidunt repellendus culpa esse nihil quaerat numquam soluta eaque.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart-o"></i></p>
+       </section>
+       
+
+    <!------JavaSCript for Toggle Menu----->
+
+    <script>
+        var navl = document.getElementById("navl");
+        function showMenu(){
+            navl.style.right ="0";
+        }
+        function hideMenu(){
+            navl.style.right ="-2000px";
+        }
+
+    </script>
+    
+</body>
+</html>
